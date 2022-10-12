@@ -1,0 +1,6 @@
+[[redirects]]
+  from = "/mango-muse"
+  to = "https://mango-india.com"
+  status = 200
+  force = true
+  headers = {X-From = "Netlify"}

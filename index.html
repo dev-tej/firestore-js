@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-Z7DVPEW50G"
+    ></script> -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-171662009-3"
+    ></script>
+    <!-- <script
+      async
+      src="https://www.google-analytics.com/analytics_debug.js"
+    ></script> -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      // gtag("config", "G-Z7DVPEW50G", { optimize_id: "GTM-M7K84Z4" });
+      gtag("config", "UA-171662009-3");
+    </script>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-KRK5B7D");
+    </script>
+    <!-- End Google Tag Manager -->
+    <link
+      rel="icon"
+      href="https://gallerify.s3-us-west-2.amazonaws.com/shopg5/favicon.ico"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="https://gallerify.s3-us-west-2.amazonaws.com/shopg5/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="https://gallerify.s3-us-west-2.amazonaws.com/shopg5/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="https://gallerify.s3-us-west-2.amazonaws.com/shopg5/android-chrome-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="https://gallerify.s3-us-west-2.amazonaws.com/shopg5/favicon-16x16.png"
+    />
+    <link
+      rel="manifest"
+      href="https://gallerify.s3-us-west-2.amazonaws.com/shopg5/site.webmanifest"
+    />
+    <link
+      rel="mask-icon"
+      href="https://gallerify.s3-us-west-2.amazonaws.com/shopg5/safari-pinned-tab.svg"
+      color="#fac90e"
+    />
+    <meta name="apple-mobile-web-app-title" content="galleri5" />
+    <meta name="application-name" content="galleri5" />
+    <meta name="msapplication-TileColor" content="#ffc40d" />
+    <meta name="theme-color" content="#FAC90E" />
+    <link
+      rel="manifest"
+      href="https://gallerify.s3-us-west-2.amazonaws.com/shopg5/manifest.json"
+    />
+    <meta property="og:title" content="Mango" />
+    <meta property="og:site_name" content="galleri5" />
+    <meta property="og:url" content="https://mango-india.com/" />
+    <meta property="og:description" content="Mango" />
+    <meta property="og:type" content="business.business" />
+    <meta property="og:image" content="" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Mango</title>
+    <style>
+      * {
+        font-family: sans-serif;
+        color: #fff;
+      }
+
+      html {
+        line-height: 1.15;
+        -webkit-text-size-adjust: 100%;
+      }
+
+      body {
+        margin-top: 300px;
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: rgb(38, 38, 38);
+      }
+
+      .w-25 {
+        width: 10rem;
+      }
+
+      .h-25 {
+        height: 10rem;
+      }
+
+      #image1 {
+        width: 25%;
+        border-radius: 50%;
+      }
+
+      #image2 {
+        width: 25%;
+        border-radius: 50%;
+        /* border-radius: 75%; */
+      }
+
+      .loader {
+        position: fixed;
+        /* visibility: hidden; */
+      }
+
+      .loader.loading {
+        visibility: visible;
+      }
+
+      .loading-container {
+        height: auto;
+      }
+
+      .flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .section {
+        /* max-width: 350px; */
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+
+      .heading3 {
+        line-height: 20px;
+        color: #f0f0e9;
+        font-size: 20px;
+        font-weight: 400;
+        margin-top: 50px;
+        margin-left: 30px;
+        margin-bottom: 120px;
+      }
+
+      .load {
+        width: 50px;
+        background-color: transparent;
+      }
+
+      .copyright {
+        font-size: 10px;
+        text-align: center;
+      }
+
+      .copyright a {
+        color: #fac912;
+      }
+
+      .grid {
+        display: grid;
+        grid-auto-flow: column;
+      }
+
+      .value {
+        margin-top: 55px;
+      }
+
+      @media only screen and (max-width: 768px) {
+        .w-25 {
+          width: 8rem;
+        }
+        .h-25 {
+          height: 8rem;
+        }
+        #image1,
+        #image2 {
+          width: 25%;
+        }
+      }
+
+      @media only screen and (max-width: 300px) {
+        .w-25 {
+          width: 5rem;
+        }
+        .h-25 {
+          height: 5rem;
+        }
+        .value {
+          margin-top: 18px;
+        }
+        .heading3 {
+          font-size: 13px;
+        }
+      }
+
+      .spinner {
+        margin: 100px auto 0;
+        width: 50px;
+        text-align: center;
+      }
+
+      .spinner > div {
+        width: 12px;
+        height: 12px;
+        background-color: #fac912;
+        border-radius: 100%;
+        display: inline-block;
+        -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+        animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+      }
+
+      .spinner .bounce1 {
+        -webkit-animation-delay: -0.32s;
+        animation-delay: -0.32s;
+      }
+
+      .spinner .bounce2 {
+        -webkit-animation-delay: -0.16s;
+        animation-delay: -0.16s;
+      }
+
+      @-webkit-keyframes sk-bouncedelay {
+        0%,
+        80%,
+        100% {
+          -webkit-transform: scale(0);
+        }
+        40% {
+          -webkit-transform: scale(1);
+        }
+      }
+
+      @keyframes sk-bouncedelay {
+        0%,
+        80%,
+        100% {
+          -webkit-transform: scale(0);
+          transform: scale(0);
+        }
+        40% {
+          -webkit-transform: scale(1);
+          transform: scale(1);
+        }
+      }
+
+      .logo {
+        margin-left: 5pt;
+        margin-bottom: -5pt;
+        width: 10%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-KRK5B7D"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div class="loader loading">
+      <div class="loading-container flex">
+        <div class="section">
+          <img alt="logo" id="image1" src=/>
+          <p style="font-size: 20px; margin-top: 15px">X</p>
+          <img
+            alt="logo"
+            id="image2"
+            src="https://gallerify.s3-us-west-2.amazonaws.com/ipics/mango-circle.png"
+          />
+        </div>
+        <br />
+        <h3 class="heading3">
+          Redirecting. Please Wait &nbsp; &nbsp;
+          <span class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+          </span>
+        </h3>
+        <p class="copyright">
+          Powered by
+          <a href="https://galleri5.com/influenstar"
+            ><img
+              class="logo"
+              src="data:image/png;base64,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
+                    L2V6Z2lmLmNvbS9yZXNpemVCaY0tAAAAEnRFWHRTb2Z0d2FyZQBlemdpZi5jb22gw7NYAAAAAElFTkSuQmCC"
+          /></a>
+        </p>
+      </div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.12.0/firebase-app.js";
+      import {
+        getFirestore,
+        setDoc,
+        doc,
+        getDoc,
+      } from "https://www.gstatic.com/firebasejs/9.12.0/firebase-firestore.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: process.env.FIREBASE_API_KEY,
+        authDomain: process.env.FIREBASE_AUTH_DOMAIN,
+        projectId: process.env.FIREBASE_PROJECT_ID,
+        storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
+        messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID,
+        appId: process.env.FIREBASE_APP_ID,
+      };
+
+      let username =
+        window.location.href.split("/")[
+          window.location.href.split("/").length - 1
+        ];
+
+      let slug =
+        window.location.href.split("/")[
+          window.location.href.split("/").length - 2
+        ];
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const db = getFirestore(app);
+
+      const INFLUENCER_REDIRECT_LINK_DATA = doc(
+        db,
+        "campaigns",
+        slug,
+        "influencers",
+        username
+      );
+      const CAMPAIGN_DEFAULT_REDIRECT_LINK_DATA = doc(db, "campaigns", slug);
+      const influencerData = await getDoc(INFLUENCER_REDIRECT_LINK_DATA);
+      const campaignData = await getDoc(CAMPAIGN_DEFAULT_REDIRECT_LINK_DATA);
+      let targetLink;
+      let userImage;
+
+      if (influencerData.exists() || campaignData.exists()) {
+        if (influencerData.data()["targetLink"].length >= 1) {
+          targetLink = `${
+            influencerData.data()["targetLink"]
+          }/?utm_source=galleri5&utm_medium=influencer&utm_campaign=galleri5_${username}&utm_term=${slug}`;
+        } else {
+          targetLink = `${
+            campaignData.data()["targetLink"]
+          }/?utm_source=galleri5&utm_medium=influencer&utm_campaign=galleri5_${username}&utm_term=${slug}`;
+        }
+      } else {
+        console.log("No such document");
+      }
+
+      if (influencerData.exists() || campaignData.exists()) {
+        if (influencerData.data()["dp"].length >= 1) {
+          userImage = influencerData.data()["dp"];
+        } else {
+          userImage = campaignData.data()["dp"];
+        }
+      } else {
+        console.log("No such document");
+      }
+
+      $("#image1").attr("src", userImage);
+
+      function postEvent(reqBody, cb) {
+        console.log("Body: ", reqBody);
+        var xhr = new XMLHttpRequest();
+        xhr.open("POST", "https://www.shopg5.com/a/store-event");
+        xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+        xhr.addEventListener("load", cb);
+        xhr.addEventListener("error", cb);
+        xhr.addEventListener("failed", cb);
+        xhr.send(JSON.stringify(reqBody));
+      }
+
+      gtag("config", "UA-171662009-3", {
+        custom_map: {
+          dimensionX: "client_id",
+        },
+      });
+
+      let clientId;
+      gtag("get", "UA-171662009-3", "client_id", (client_id) => {
+        clientId = client_id;
+      });
+
+      function sendData() {
+        try {
+          var reqBody = {
+            billUpload: {},
+            formFilled: {},
+            instagramData: {},
+            campaignId: slug,
+            campaignSlug: slug,
+            eventType: "REDIRECT",
+            username: username,
+            gaClientId: clientId || "",
+            referrer: document.domain,
+            utmParams: {
+              utm_source: "galleri5",
+              utm_medium: "influencer_" + username,
+              utm_campaign: slug,
+            },
+          };
+          console.log(reqBody, "Req Body from Try");
+          postEvent(reqBody, function () {
+            ga("send", "event", slug, "Redirect", username);
+            console.log(document.referrer, "Referrer");
+            // window.open(targetLink, "_self");
+          });
+        } catch (e) {
+          var reqBody = {
+            billUpload: {},
+            formFilled: {},
+            instagramData: {},
+            campaignId: slug,
+            campaignSlug: slug,
+            eventType: "REDIRECT",
+            username: username,
+            referrer: window.referrer,
+            utmParams: {
+              utm_source: "galleri5",
+              utm_medium: "influencer_" + username,
+              utm_campaign: slug,
+            },
+          };
+          console.log(reqBody, "Req Body from Catch");
+          postEvent(reqBody, function () {
+            console.log(document.referrer);
+            // window.open(targetLink, "_self");
+          });
+        }
+      }
+
+      sendData();
+
+      // var meta = document.createElement("meta");
+      // meta.httpEquiv = "refresh";
+      // meta.content = `1; URL=${targetLink}`;
+      // document.getElementsByTagName("head")[0].appendChild(meta);
+    </script>
+  </body>
+</html>
