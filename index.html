@@ -344,12 +344,12 @@
 
       // Your web app's Firebase configuration
       const firebaseConfig = {
-        apiKey: process.env.FIREBASE_API_KEY,
-        authDomain: process.env.FIREBASE_AUTH_DOMAIN,
-        projectId: process.env.FIREBASE_PROJECT_ID,
-        storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
-        messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID,
-        appId: process.env.FIREBASE_APP_ID,
+        apiKey: "AIzaSyCA_NsKV-aEjSBG9w2GtYCuT_PtgOquNVk",
+        authDomain: "fir-databse-7d070.firebaseapp.com",
+        projectId: "fir-databse-7d070",
+        storageBucket: "fir-databse-7d070.appspot.com",
+        messagingSenderId: "178755797090",
+        appId: "1:178755797090:web:a632e6eb545d3a9cda513b",
       };
 
       let username =
@@ -449,7 +449,7 @@
           postEvent(reqBody, function () {
             ga("send", "event", slug, "Redirect", username);
             console.log(document.referrer, "Referrer");
-            // window.open(targetLink, "_self");
+            window.open(targetLink, "_self");
           });
         } catch (e) {
           var reqBody = {
@@ -470,17 +470,17 @@
           console.log(reqBody, "Req Body from Catch");
           postEvent(reqBody, function () {
             console.log(document.referrer);
-            // window.open(targetLink, "_self");
+            window.open(targetLink, "_self");
           });
         }
       }
 
       sendData();
 
-      // var meta = document.createElement("meta");
-      // meta.httpEquiv = "refresh";
-      // meta.content = `1; URL=${targetLink}`;
-      // document.getElementsByTagName("head")[0].appendChild(meta);
+      var meta = document.createElement("meta");
+      meta.httpEquiv = "refresh";
+      meta.content = `1; URL=${targetLink}`;
+      document.getElementsByTagName("head")[0].appendChild(meta);
     </script>
   </body>
 </html>
